@@ -77,6 +77,9 @@ public class ChooseAreaActivity extends Activity {
     private void queryProvinces() {
         provinceList = coolWeatherDB.loadProvinces();
         if (provinceList.size() > 0) {
+
+//            Toast.makeText(ChooseAreaActivity.this,"城市的数量"+selectedProvince,Toast.LENGTH_LONG).show();
+
             dataList.clear();
             for (Province province : provinceList) {
                 dataList.add(province.getProvinceName());
